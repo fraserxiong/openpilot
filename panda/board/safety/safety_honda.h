@@ -18,7 +18,7 @@ const CanMsg HONDA_BH_LONG_TX_MSGS[] = {{0xE4, 1, 5}, {0x1DF, 1, 8}, {0x1EF, 1, 
 // gas_norm2 = ((gain_dbc2*gas2) + offset_dbc)
 // assuming that 2*(gain_dbc1*gas1) == (gain_dbc2*gas2)
 // In this safety: ((gas1 + (gas2/2))/2) > THRESHOLD
-const int HONDA_GAS_INTERCEPTOR_THRESHOLD = 344;
+const int HONDA_GAS_INTERCEPTOR_THRESHOLD = 15000;
 #define HONDA_GET_INTERCEPTOR(msg) (((GET_BYTE((msg), 0) << 8) + GET_BYTE((msg), 1) + ((GET_BYTE((msg), 2) << 8) + GET_BYTE((msg), 3)) / 2 ) / 2) // avg between 2 tracks
 const int HONDA_BOSCH_NO_GAS_VALUE = -30000; // value sent when not requesting gas
 const int HONDA_BOSCH_GAS_MAX = 2000;
