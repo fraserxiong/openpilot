@@ -50,7 +50,11 @@ Manually using SSH
 - git checkout [insert branchname here]  (you can find branchnames on github page or issue "git branch" command)
 - reboot
 
+Using Shane's Fork Installer
 
+- Uninstall Openpilot or Factory Reset the device
+- For the Custom Software Installer URL, enter: https://smiskol.com/fork/kegman/[insert branchname here]
+  - For example, to install the branch `kegman-0.8.3`, enter https://smiskol.com/fork/kegman/kegman-0.8.3
 
 Notices
 ------
